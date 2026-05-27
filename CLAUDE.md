@@ -13,6 +13,34 @@ Compose files are split per host under `compose/$HOSTNAME/`. Secrets are file-ba
 
 ---
 
+## Claude Code — Available Skills
+
+Invoke with `/skill-name` in any session on this repo:
+
+| Skill | Purpose |
+|-------|---------|
+| `/session-start-hook` | Set up startup hooks for Claude Code on the web |
+| `/update-config` | Configure settings.json — hooks, permissions, env vars |
+| `/keybindings-help` | Customize keyboard shortcuts / keybindings.json |
+| `/verify` | Run the app and confirm a change works in practice |
+| `/code-review` | Review current diff for bugs (supports `--fix` and inline PR comments) |
+| `/fewer-permission-prompts` | Scan transcripts and add allowlist entries to reduce prompts |
+| `/loop` | Run a command on a recurring interval |
+| `/claude-api` | Build/debug/optimize Anthropic SDK apps |
+| `/run` | Launch the project app to test a change live |
+| `/init` | Initialize a new CLAUDE.md with codebase docs |
+| `/review` | Review a pull request |
+| `/security-review` | Full security review of pending branch changes |
+| `/simplify` | Review current diff and apply fixes |
+
+## GitHub Access
+
+- **Repo in scope:** `crdollar/docker-traefik` (read/write via GitHub MCP tools)
+- Branches, PRs, commits, issues, file contents, CI status are all accessible
+- Calls targeting any other repository will be denied
+
+---
+
 ## NSA MCP Security Guidelines (Permanent Reference)
 
 **Source:** NSA Cybersecurity Information Sheet — *"Model Context Protocol (MCP): Security Design Considerations for AI-Driven Automation"* (AISC, May 2026, U/OO/6030316-26 PP-26-1834 Ver. 1.0)
