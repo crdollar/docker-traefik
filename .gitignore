@@ -4,6 +4,7 @@
 !.gitignore
 !README.md
 !CHANGELOG.md
+!CLAUDE.md
 !LICENSE
 !.bash_aliases.example
 !.env.example
